@@ -51,12 +51,6 @@
 			flex: 1 auto;
 		}
 
-		.right-box
-		{
-			float: right;
-			width: 20%;
-		}
-
 		.no-border
 		{
 			border: none;
@@ -70,14 +64,11 @@
 
 		.two-column
 		{
-			display: table;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
 			height: 100%;
 			width: 100%;
-		}
-
-		.two-column > div {
-			display: table-cell;
-			height: 100%;
 		}
 
 		.col-left
@@ -89,6 +80,7 @@
 
 		.col-right
 		{
+			flex: 0;
 	  		width: 200px;
 			height: 100%;
 		}
