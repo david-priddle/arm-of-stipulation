@@ -23,6 +23,15 @@
                 <GroupBox.Header>
                     <TextBlock>Executed commands</TextBlock>
                 </GroupBox.Header>
+                <ListBox>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <VirtualizingStackPanel VerticalAlignment="Bottom"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <TextBlock>Test</TextBlock>
+                    <TextBlock>Test2</TextBlock>
+                </ListBox>
             </GroupBox>
             <GroupBox Grid.Row="1">
                 <GroupBox.Header>
