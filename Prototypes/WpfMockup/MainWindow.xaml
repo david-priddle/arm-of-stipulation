@@ -1,0 +1,68 @@
+﻿<Window x:Class="WpfMockup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMockup"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        Background="#222222"
+        Foreground="#D1D1D1"
+        WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <GroupBox Grid.Row="0">
+                <GroupBox.Header>
+                    <TextBlock>Executed commands</TextBlock>
+                </GroupBox.Header>
+            </GroupBox>
+            <GroupBox Grid.Row="1">
+                <GroupBox.Header>
+                    <TextBlock>Commands</TextBlock>
+                </GroupBox.Header>
+                <TextBox></TextBox>
+            </GroupBox>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <GroupBox>
+                <GroupBox.Header>
+                    <TextBlock>Darkzaelus</TextBlock>
+                </GroupBox.Header>
+                <StackPanel>
+                    <TextBlock>Strength: 10</TextBlock>
+                    <TextBlock>Concentration: 10</TextBlock>
+                    <TextBlock>Dexterity: 10</TextBlock>
+                    <TextBlock>Intelligence: 10</TextBlock>
+                    <TextBlock>Wisdom: 10</TextBlock>
+                    <TextBlock>Charisma: 10</TextBlock>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Grid.Row="1">
+                <GroupBox.Header>
+                    <TextBlock>Inventory</TextBlock>
+                </GroupBox.Header>
+                <StackPanel>
+                    <TextBlock>Cudgel</TextBlock>
+                    <TextBlock>Mace of storms</TextBlock>
+                    <TextBlock>Cron's legacy</TextBlock>
+                    <TextBlock>Natalya's bracelet</TextBlock>
+                </StackPanel>
+            </GroupBox>
+            <Border Grid.Row="0" BorderBrush="#7D674F" BorderThickness="1">
+                
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
